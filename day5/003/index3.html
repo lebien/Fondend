@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+      /*  Khai báo font*/
+        @font-face {
+           /* Khai báo tên font*/
+            font-family: "Lato";
+           /* Khai báo đường dẫn của font*/
+            src:url("Lato/Lato-LightItalic.ttf");
+
+        }
+    /*    Sử dụng font*/
+        #box1{
+            font-family: "Lato", sans-serif;
+
+        }
+        @font-face {
+            font-family: "Cherry Bomb";
+            src: url("Cherry_Bomb/CherryBomb-Regular.ttf");
+        }
+        #box2{
+            font-family: "Cherry Bomb", sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+    <pre>
+        Nhúng các font vào thông qua @font-face
+        @font-face {
+          font-family: "khai báo tên font mà mình mong muốn";
+          src: url("đường dẫn của file font");
+        }
+        ví dụ :
+        @font-face {
+          font-family: "Lato";
+          src: url("Lato/Lato-Regular.ttf");
+        }
+    </pre>
+    <div id="box1">Nhúng font Lato</div>
+    <div id="box2">Nhúng font Cherry_Bomb</div>
+</body>
+</html>
