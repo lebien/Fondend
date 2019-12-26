@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="normalize.css">
+
+    <style type="text/css">
+        header, footer {
+            padding: 50px;
+            text-align: center;
+            background-color: darkgray;
+        }
+        aside{
+            width: 20%;
+            box-sizing: border-box;
+            background: orange;
+            padding: 30px;
+            min-height: 400px;
+            float: left;
+        }
+        .main-content{
+            width: 80%;
+            box-sizing: border-box;
+            background: #ae7e35;
+            padding: 50px;
+            min-height: 400px;
+            float: right;
+            text-align: center;
+        }
+        .clearfix::after {
+            display: block;
+            clear: both;
+            content: "";
+        }
+        ul{
+            list-style: none;
+        }
+        @media screen  and (max-width: 680px){
+            /*áp dụng cho màn hình nhỏ hơn 680px*/
+            aside{
+                width: 100%;
+                float: none;
+            }
+            .main-content{
+                width: 100%;
+                float: none;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <h1>Header</h1>
+    </header>
+    <main class="clearfix">
+        <section class="main-content">
+            <h1>Nội dung chính</h1>
+        </section>
+        <aside>
+            <h1>Slidebar</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Trang chủ</a></li>
+                    <li><a href="#">Giới thiệu</a></li>
+                    <li><a href="#">Sản phẩm</a></li>
+                    <li><a href="#">Liên hệ</a></li>
+                    <li><a href="#">Tin tức</a></li>
+                </ul>
+            </nav>
+        </aside>
+    </main>
+
+    <footer>
+        <h1>Footer</h1>
+    </footer>
+</body>
+</html>
