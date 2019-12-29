@@ -1,0 +1,140 @@
+<html>
+<head>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <style type="text/css">
+        .form-inline label{
+            justify-content: left;
+        }
+        .form-inline button {
+            background: yellow;
+        }
+    </style>
+<!------ Include the above in your HEAD tag ---------->
+</head>>
+<section class="testimonial py-5" id="testimonial">
+    <div class="container">
+        <div class="row ">
+            <div class="col-md-4 py-5 bg-primary text-white text-center ">
+                <div class=" ">
+                    <div class="card-body">
+                        <img src="http://www.ansonika.com/mavia/img/registration_bg.svg" style="width:30%">
+                        <h2 class="py-3">Tạo tài khoản</h2>
+                        <p>
+                            Tạo tài khoản để theo dõi đơn hàng, lưu danh sách sản phẩm yêu thích, nhận nhiều ưu đãi hấp dẫn
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!--<div class="col-md-8 py-5 border">
+                <h4 class="pb-4">Tạo tài khoản</h4>
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <p>
+                                <label>Họ tên</label>
+                                <input id="Full Name" name="Full Name" placeholder="Full Name" class="form-control" type="text">
+                            </p>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <input id="Mobile No." name="Mobile No." placeholder="Mobile No." class="form-control" required="required" type="text">
+                        </div>
+                        <div class="form-group col-md-6">
+
+                            <select id="inputState" class="form-control">
+                                <option selected>Choose ...</option>
+                                <option> New Buyer</option>
+                                <option> Auction</option>
+                                <option> Complaint</option>
+                                <option> Feedback</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-12">
+                            <textarea id="comment" name="comment" cols="40" rows="5" class="form-control"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <div class="form-group">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                                    <label class="form-check-label" for="invalidCheck2">
+                                        <small>By clicking Submit, you agree to our Terms & Conditions, Visitor Agreement and Privacy Policy.</small>
+                                    </label>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <button type="button" class="btn btn-danger">Submit</button>
+                    </div>
+                </form>
+            </div>-->
+            <div class="col-md-8 py-5 border">
+                <h4 class="pb-4">Tạo tài khoản</h4>
+                <form action="/action_page.php">
+                    <div class="form-inline">
+                        <label for="hoten" class="col-md-2 ">Họ tên:</label>
+                        <input type="text" class="form-control col-md-6" id="hoten" placeholder="Nhập hộ tên" name="hoten">
+                    </div>
+                    <div class="form-inline">
+                        <label for="sdt" class="col-md-2">Sdt:</label>
+                        <input type="text" class="form-control col-md-4" id="sdt" placeholder="Nhập hộ tên" name="sdt">
+                        <button class="style">Gửi mã xác thực</button>
+                    </div>
+                    <div class="form-inline">
+                        <label for="mxt" class="col-md-2 ">Mã xác thực:</label>
+                        <input type="text" class="form-control col-md-6" id="mxt" placeholder="Nhập mã xác thực" name="mxt">
+                    </div>
+                    <div class="form-inline">
+                        <label for="email" class="col-md-2 ">Email:</label>
+                        <input type="text" class="form-control col-md-6" id="email" placeholder="Nhập email" name="email">
+                    </div>
+                    <div class="form-inline">
+                        <label for="matkhau" class="col-md-2 ">Mật khẩu:</label>
+                        <input type="text" class="form-control col-md-6" id="matkhau" placeholder="Nhập mật khẩu từ 6 đến 32 ký tự" name="matkhau">
+                    </div>
+                    <div class="form-inline">
+                        <label class="col-md-2 ">Giới tính:</label>
+                        <input type="radio" name="gioitinh" value="nữ" class="col-md-1"> Nữ
+                        <input type="radio" name="gioitinh" value="nam" class="col-md-1" checked> Nam
+
+                    </div>
+                    <div class="form-inline">
+                        <label class="col-md-2">Tháng</label>
+                        <select name="thang" class="col-2">
+                            <option value="1">Tháng 1</option>
+                            <option value="2">Tháng 2</option>
+                            <option value="3">Tháng 3</option>
+                            <option value="4">Tháng 4</option>
+                            <option value="5">Tháng 5</option>
+                            <option value="6">Tháng 6</option>
+                            <option value="7">Tháng 7</option>
+                            <option value="8">Tháng 8</option>
+                            <option value="9">Tháng 9</option>
+                            <option value="10" selected>Tháng 10</option>
+                            <option value="11">Tháng 11</option>
+                            <option value="12">Tháng 12</option>
+                        </select>
+
+                    </div>
+                    <div class="custom-control custom-checkbox col-md">
+                        <input type="checkbox" class="custom-control-input" id="customCheck" name="example1">
+                        <label class="custom-control-label col-4" for="customCheck" >Nhận thông tin khuyễn mãi của tiki</label>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+</html>
