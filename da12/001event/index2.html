@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+    <div id="target" style="background: yellow; width: 100px; height: 100px">
+        BOX Target
+    </div>
+
+    <button onclick="anhien('block')">Hiển thị box target</button>
+    <button onclick="anhien('none')">Ẩn box target</button>
+	<script type="text/javascript">
+		function anhien(ab){
+			if(ab){
+				document.getElementById("target").style.display = ab;
+			}
+		}
+		function anhien(x){
+			if (x) {
+				document.getElementById("target").style.display = x;
+			}
+		}
+	</script>
+</body>
+</html>
