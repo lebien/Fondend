@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<h1>Onchange là sự kiện thay đổi  giá trị của ô input</h1>
+	<div>
+		<input type="text" name="hoten" id="hoten" value="" onchange="showinfo()">
+
+	</div>
+	<label for="" id="chao"></label>
+	<script type="text/javascript">
+		function showinfo(){
+			var hoten = document.getElementById("hoten").value;
+			document.getElementById("chao").innerText = "chào " + hoten;
+		}
+	</script>
+</body>
+</html>

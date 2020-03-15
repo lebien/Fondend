@@ -2,58 +2,61 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Title</title>
 </head>
 <body>
+
     <div>
         <label>Số 1</label>
-        <input id="so1" type="text" name="so1" value="">
+        <input type="text" name="so1" id="so1" value="">
     </div>
 
     <div>
         <label>Số 2</label>
-        <input id="so2" type="text" name="so2" value="">
+        <input type="text" name="so2" id="so2" value="">
     </div>
 
     <div id="ketqua">Kết quả</div>
 
     <div>
-        <button onclick="ketqua(1)">Tổng</button>
-        <button onclick="ketqua(2)">Hiệu</button>
-        <button onclick="ketqua(3)">Tích</button>
-        <button onclick="ketqua(4)">Thương</button>
+        <button onclick="maytinh('+')">Tổng</button>
+        <button onclick="maytinh('-')">Hiệu</button>
+        <button onclick="maytinh('*')">Tích</button>
+        <button onclick="maytinh('/')">Thương</button>
     </div>
-    <script>
-       
-        var kq;
-        var tich;
-        var chia;
-        var hieu;
-        function ketqua(x){
-            var a = parseInt(document.getElementById('so1').value);
-            var b = parseInt(document.getElementById('so2').value);
-            kq = a + b;
-            tich = a * b;
-            hieu = a - b;
-            chia = a/b
-            switch(x){
-                case 1:
-                 document.getElementById('ketqua').innerText = kq;
-                break;
-                case 2:
-                document.getElementById('ketqua').innerText = hieu;
-                break;
-                case 3:
-                document.getElementById('ketqua').innerText = tich;
-                break;
-                case 4:
-                document.getElementById('ketqua').innerText = chia;
-                break;
+
+    <script type="text/javascript">
+
+
+        function maytinh(pheptinh) {
+
+            // lấy giá trị của 2 ô input số 1 và số 2
+            var so1 = document.getElementById("so1").value;
+            var so2 = document.getElementById("so2").value;
+
+            if(pheptinh == '+') {
+                var tong = Number(so1) + Number(so2);
+                document.getElementById("ketqua").innerHTML = "Kết quả : " + tong;
+            }
+
+            if(pheptinh == '-') {
+                var hieu = Number(so1) - Number(so2);
+                document.getElementById("ketqua").innerHTML = "Kết quả : " + hieu;
+            }
+
+            if(pheptinh == '*') {
+                var tich = Number(so1) * Number(so2);
+                document.getElementById("ketqua").innerHTML = "Kết quả : " + tich;
+            }
+
+            if(pheptinh == '/') {
+                var thuong = Number(so1) / Number(so2);
+                document.getElementById("ketqua").innerHTML = "Kết quả : " + thuong;
             }
         }
+
+
     </script>
-    
+
 </body>
 </html>
